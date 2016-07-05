@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Consulta Honorario</title>
+
+<link rel="stylesheet" type="text/css" href="../css/estilo.css">
+<script type="text/javascript" src="../script/script1.js"></script>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+  
+   <script>
+        $(function() {
+            $( "datepicker3" ).datepicker();
+        });
+   </script>
+   
+       
+        
+</head>
+<body onload="bannerLogo1()">
+	<header class="topo">
+	
+		<div id="#outer-wrapper"></div>
+
+		<!-- Esse é o Logo da Empresa -->
+		<img alt="Logo" src="../img/lca.png" id="logo">
+
+		<!-- Esse é o Banner de Propagando do Topo -->
+		<img alt="" id="banner1">
+
+	</header>
+
+		<section class="gridContainerDespesa">
+		<br>
+	
+		<div id="honorario">
+		<form>
+			<labeL>Nome Do Honorário: <input type="text" name="despesa"
+				id="idHonorario" /></labeL></form><br>
+
+		<form>
+			<labeL>Período: <input type="text" id="datepicker3"></labeL></form>
+			
+	
+			<form name="form" onsubmit="return false;"><br>
+			<labeL>Valor Horas Trabalhadas <input name="campo1"></labeL><br><br>
+			<labeL>Quant Horas Trabalhadas <input name="campo2"></labeL><br><br>
+			<labeL>Total de Horas Trabalhadas <input name="campo4" readonly></labeL><br><br>
+			<button id="botaocalcular" onclick="calcular()">Calcular-Salário</button>
+			</form>
+			<br>
+
+			<label>Observações :</label><br>
+		<textarea id="txtarea" placeholder="Deixe aqui suas observações ... LCA ADVOGADOS..."></textarea>
+		<br><br>
+        
+		<div class="myButtonDespesas" onclick="alerta5()">Registrar Honorários</div>
+	
+		
+		</div>
+		</section>
+		<div id="menu">
+		<nav class="dropdownmenu">
+  <ul>
+    <li><a href="PaginaDespesa.html">Pagina Despesa</a></li>
+    <li><a href="Despesas.html">Lançar-Despesas</a></li>
+   	<li><a href="Honorarios.html">Honorários</a></li>
+    <li><a href="ConsultaHonorario.html">Lançar-Honorários</a></li>
+
+  
+  </ul>
+</nav>
+  </div>
+
+
+	<footer class="rodape">Advocacia LCA Todos Direitos Reservados</footer>
+
+</body>
+</html>

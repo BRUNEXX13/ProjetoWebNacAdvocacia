@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Honorarios</title>
+
+
+<link rel="stylesheet" type="text/css" href="../css/estilo.css">
+
+<script type="text/javascript" src="../script/script1.js"></script>
+
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">    </script>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+<link rel="stylesheet"
+	href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+<script>
+        $(function() {
+            $( "#datepicker1" ).datepicker();
+        });
+   </script>
+<script>
+        $(function() {
+            $( "#datepicker2" ).datepicker();
+        });
+   </script>
+
+
+
+
+</head>
+<body onload="bannerLogo1()">
+	<header class="topo">
+
+		<!-- Esse é o Logo da Empresa -->
+		<img alt="Logo" src="../img/lca.png" id="logo">
+
+		<!-- Esse é o Banner de Propagando do Topo -->
+		<img alt="" id="banner1">
+
+	</header>
+	<section class="gridContainerHn">
+		<br>
+		<form>
+			<labeL>Número do Processo: <input required="required"
+				pattern="123456789">
+			</labeL>
+
+		</form>
+		<br>
+		<form>
+			<labeL>Nome do Cliente: <input type="text" name="nome"
+				id="idNome" />
+			</labeL>
+		</form>
+		<br>
+
+		<form>
+			<labeL>Período:<input type="text" id="datepicker1">
+				Até <input type="text" id="datepicker2">
+
+
+			</labeL> <br> <br> <br> <br> <br> <br> <br>
+			<br> <br> <br> <br>
+		</form>
+
+
+		<div id="livro"></div>
+
+
+
+		<div class="myButton" onclick="alerta3()">Buscar</div>
+	</section>
+
+
+	<section class="gridContainerHonorarios">
+		<br>
+
+		<table ID="table">
+
+			<tr>
+				<th>Número</th>
+				<th>Descricao</th>
+				<th>Cliente</th>
+				<th>Ação</th>
+			</tr>
+			<tr>
+				<td>001</td>
+				<td>Descricao Numero 0001</td>
+				<td>Cliente Numero 0001</td>
+				<td><input value="Lancar Honorário" onclick="Honorario()"
+					type="button"> <input value="Consultar Honorário"
+					onclick="Honorario()" type="button">
+			</tr>
+			<tr>
+				<td>002</td>
+				<td>Descricao Numero 0002</td>
+				<td>Cliente Numero 0002</td>
+				<td><input value="Lancar Honorário" onclick="Honorario()"
+					type="button"> <input value="Consultar Honorário"
+					onclick="Honorario()" type="button">
+			</tr>
+			<tr>
+				<td>003</td>
+				<td>Descricao Numero 0003</td>
+				<td>Cliente Numero 0003</td>
+				<td><input value="Lancar Honorário" onclick="Honorario()"
+					type="button"> <input value="Consultar Honorário"
+					onclick="Honorario()" type="button">
+			</tr>
+			<tr>
+				<td>004</td>
+				<td>Descricao Numero 0004</td>
+				<td>Cliente Numero 0004</td>
+				<td><input value="Lancar Honorário" onclick="Honorario()"
+					type="button"> <input value="Consultar Honorário"
+					onclick="Honorario()" type="button">
+			</tr>
+
+		</table>
+
+
+	</section>
+	<br>
+
+
+	<div id="menu">
+		<nav class="dropdownmenu">
+			<ul>
+				<li><a href="PaginaDespesa.html">Pagina Despesa</a></li>
+				<li><a href="Despesas.html">Lançar-Despesas</a></li>
+				<li><a href="Honorarios.html">Honorários</a></li>
+				<li><a href="ConsultaHonorario.html">Lançar-Honorários</a></li>
+
+
+			</ul>
+		</nav>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+	<footer class="rodapeDespesas">Advocacia LCA Todos Direitos Reservados</footer>
+
+
+
+
+
+
+
+
+</body>
+</html>
